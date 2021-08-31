@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/icons/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <title>Social Media Dashboard</title>
+</head>
+
+<body class="">
+    <header class="header">
+        <div class="container">
+            <div class="header__about">
+                <h1 class="header-title">
+                    Social Media Dashboard
+                </h1>
+                <p class="header__followers">
+                    <strong>
+                        Total Followers:
+                    </strong>
+                    <span class="header__followers-count">
+                        23, 004
+                    </span>
+                </p>
+            </div>
+            <div class="header__mode">
+                <label class="header__mode-label" for="header-toggle">
+                    Dark Mode
+                </label>
+                <button id="header-toggle" class="header__mode-switch" role="switch" aria-checked="false">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="sr-only">
+                    Followers/ Subscribers
+                </h2>
+                <div class="followers wrapper">
+                    <article class="card follower follower--facebook">
+                        <div class="follower__header">
+                            <img class="icon" src="./assets/icons/icon-facebook.svg" alt="Facebook">
+                            <p class="follower__header-name">
+                                @nathanf
+                            </p>
+                        </div>
+                        <div class="follower__body">
+                            <span class="follower__body-count">
+                                1987
+                            </span>
+                            <h3 class="follower__body-title">
+                                Followers
+                            </h3>
+                        </div>
+                        <div class="follower__footer">
+                            <p class="follower-stats stats-up stats-up--small">
+                                <span class="follower-stats__value">
+                                    12
+                                </span>
+                                Today
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf facebook page
+                        </a>
+                    </article>
+                    <article class="card follower follower--twitter">
+                        <div class="follower__header">
+                            <img class="icon" src="./assets/icons/icon-twitter.svg" alt="Twitter">
+                            <p class="follower__header-name">
+                                @nathanf
+                            </p>
+                        </div>
+                        <div class="follower__body">
+                            <span class="follower__body-count">
+                                1044
+                            </span>
+                            <h3 class="follower__body-title">
+                                Followers
+                            </h3>
+                        </div>
+                        <div class="follower__footer">
+                            <p class="follower-stats stats-up stats-up--large">
+                                <span class="follower-stats__value">
+                                    99
+                                </span>
+                                Today
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf twitter page
+                        </a>
+                    </article>
+                    <article class="card follower follower--instagram">
+                        <div class="follower__header">
+                            <img class="icon" src="./assets/icons/icon-instagram.svg" alt="Instagram">
+                            <p class="follower__header-name">
+                                @nathanf
+                            </p>
+                        </div>
+                        <div class="follower__body">
+                            <span class="follower__body-count">
+                                11k
+                            </span>
+                            <h3 class="follower__body-title">
+                                Followers
+                            </h3>
+                        </div>
+                        <div class="follower__footer">
+                            <p class="follower-stats stats-up stats-up--large">
+                                <span class="follower-stats__value">
+                                    1099
+                                </span>
+                                Today
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf instagram page
+                        </a>
+                    </article>
+                    <article class="card follower follower--youtube">
+                        <div class="follower__header">
+                            <img class="icon" src="./assets/icons/icon-youtube.svg" alt="Youtube">
+                            <p class="follower__header-name">
+                                @nathanf
+                            </p>
+                        </div>
+                        <div class="follower__body">
+                            <span class="follower__body-count">
+                                8239
+                            </span>
+                            <h3 class="follower__body-title">
+                                Subscribers
+                            </h3>
+                        </div>
+                        <div class="follower__footer">
+                            <p class="follower-stats stats-down stats-down--large">
+                                <span class="follower-stats__value">
+                                    144
+                                </span>
+                                Today
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf youtube page
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="overview">
+            <div class="container">
+                <h2 class="overview-title">
+                    Overview - Today
+                </h2>
+                <div class="statuses wrapper">
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Page views
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-facebook.svg" alt="Facebook"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    87
+                                </span>
+                            </p>
+                            <p class="status-stats stats-up stats-up--large">
+                                3%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf facebook page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Likes
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-facebook.svg" alt="Facebook"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    52
+                                </span>
+                            </p>
+                            <p class="status-stats stats-down stats-down--large">
+                                2%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf facebook page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Likes
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-instagram.svg" alt="Instagram"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    5462
+                                </span>
+                            </p>
+                            <p class="status-stats stats-up stats-up--large">
+                                2257%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf instagram page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Profile views
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-instagram.svg" alt="Instagram"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    52k
+                                </span>
+                            </p>
+                            <p class="status-stats stats-up stats-up--large">
+                                3%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf instagram page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Retweets
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-twitter.svg" alt="Twitter"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    117
+                                </span>
+                            </p>
+                            <p class="status-stats stats-up stats-up--large">
+                                303%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf twitter page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Likes
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-twitter.svg" alt="Twitter"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    507
+                                </span>
+                            </p>
+                            <p class="status-stats stats-up stats-up--large">
+                                553%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf twitter page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Likes
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-youtube.svg" alt="Youtube"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    107
+                                </span>
+                            </p>
+                            <p class="status-stats stats-down stats-down--large">
+                                19%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf youtube page
+                        </a>
+                    </article>
+                    <article class="card status">
+                        <div class="status__header">
+                            <h3 class="status__header-title">
+                                Total views
+                            </h3>
+                            <img class="status__header-icon" src="./assets/icons/icon-youtube.svg" alt="Youtube"
+                                class="icon" aria-hidden="true">
+                        </div>
+                        <div class="status__body">
+                            <p class="status-total">
+                                <span class="sr-only">
+                                    Total:
+                                </span>
+                                <span class="status-total__value">
+                                    1407
+                                </span>
+                            </p>
+                            <p class="status-stats stats-down stats-down--large">
+                                12%
+                            </p>
+                        </div>
+                        <a href="#" class="card-link">
+                            Visit @nathanf youtube page
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

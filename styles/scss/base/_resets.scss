@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --background:#{$c-white};
+    --background-top:#{$c-zircon};
+    --background-hover:#{$c-snuff};
+    --card:#{$c-whitelilac};
+    --text:#{$c-charade};
+    --text2:#{$c-comet};
+    --toggle-label:#{$c-comet};
+    --section-title:#{$c-comet};
+}
+
+body.dark{
+    --background:#{$c-charade};
+    --background-top:#{$c-steelgray};
+    --background-hover:#{$c-pickledbluewood};
+    --card:#{$c-ebonyclay};
+    --text:#{$c-white};
+    --text2:#{$c-bluebell};
+    --toggle-label:#{$c-white};
+    --section-title:#{$c-white};
+}
+
+body{
+    font-family: $ff-inter;
+    background-color: var(--background);
+    color:var(--text);
+}
+
+h1, h2{
+    margin-bottom: 0.5rem;
+}
+
+button{
+    border:none;
+    cursor: pointer;
+}
+
+.sr-only{
+    height:0;
+    width:0;
+    display: block;
+    overflow: hidden;
+}

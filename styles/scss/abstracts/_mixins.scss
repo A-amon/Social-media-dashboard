@@ -1,0 +1,17 @@
+@mixin tablet-query{
+    @media screen and (min-width:$d-tablet) {
+        @content;
+    }
+}
+
+@mixin laptop-query{
+    @media screen and (min-width:$d-laptop) {
+        @content;
+    }
+}
+
+@mixin desktop-query{
+    @media screen and (min-width:$d-desktop) {
+        @content;
+    }
+}

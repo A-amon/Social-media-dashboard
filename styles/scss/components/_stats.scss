@@ -1,0 +1,37 @@
+
+.stats{
+    &-up, &-down{
+        font-size:0.9rem;
+        font-weight: $fw-bold;
+    }
+    
+    &-up::before, &-down::before{
+        content:'';
+        height:0.5rem;
+        width: 0.5rem;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+    }
+
+    &-up{
+        &::before{
+            background-image:url('../../../assets/icons/icon-up.svg');
+        }
+
+        &--large{
+            color:$c-limegreen;
+        }
+    }
+
+    &-down{
+        &::before{
+            background-image:url('../../../assets/icons/icon-down.svg');
+        }
+
+        &--large{
+            color:$c-brightred;
+        }
+    }
+}
