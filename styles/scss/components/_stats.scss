@@ -16,22 +16,18 @@
     }
 
     &-up{
+        color:$c-limegreen;
+
         &::before{
             background-image:url('../../assets/icons/icon-up.svg');
-        }
-
-        &--large{
-            color:$c-limegreen;
         }
     }
 
     &-down{
+        color:$c-brightred;
+
         &::before{
             background-image:url('../../assets/icons/icon-down.svg');
-        }
-
-        &--large{
-            color:$c-brightred;
         }
     }
 }

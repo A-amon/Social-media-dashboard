@@ -11,6 +11,8 @@
     --text:#{$c-charade};
     --text2:#{$c-comet};
     --toggle-label:#{$c-comet};
+    --toggle:#{$c-gray};
+    --toggle-circle:#{$c-white};
     --section-title:#{$c-comet};
 }
 
@@ -22,6 +24,8 @@ body.dark{
     --text:#{$c-white};
     --text2:#{$c-bluebell};
     --toggle-label:#{$c-white};
+    --toggle:#{$c-gradient1};
+    --toggle-circle:#{$c-steelgray};
     --section-title:#{$c-white};
 }
 
