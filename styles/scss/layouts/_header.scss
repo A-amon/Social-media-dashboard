@@ -9,6 +9,7 @@
         top:0;
         left:0;
         z-index: -1;
+        transition:background-color 0.5s;
     }
 
     &__about{
@@ -29,38 +30,99 @@
         font-weight: $fw-bold;
     }
 
+    /*
+    * TOGGLE USING RADIO BUTTONS
+    */
+    &__mode, &__switch{
+        display: flex;
+        align-items: center;
+    }
+
     &__mode{
         font-weight: $fw-bold;
-        padding-top:1rem;
-        &, &-switch{
-            display: flex;
-            align-items: center;
+        border:none;
+        margin-left: auto;
+        padding-top: 1rem;
+        text-transform: capitalize;
+    }
+
+    &__switch{
+        background: var(--toggle);
+        border-radius: 50px;  
+        position: relative;
+        width: 4rem;
+        height: 2rem;
+        margin-left: 0.5rem;
+
+        &-dot{
+            content:'';
+            height:1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            background: var(--toggle-circle);
+            position: absolute;
+            top:0;
+            bottom:0;
+            margin:auto;
+            transition:left 0.3s;
         }
 
-        &-switch{
-            margin-left: auto;
-            padding:0.5rem 0.25rem;
-            width: 65px;
-            height: 35px;
-            border-radius: 50px;
-            background:var(--toggle);
-
-            &[aria-checked='true']::before{
-                transform:translateX(calc(100% + 0.5rem));
+        &-toggle{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:0;
+            left: 0;
+            opacity: 0;
+            &:not(:checked){
+                z-index: 1;
             }
 
-            &::before{
-                content:'';
-                display: block;
-                height:25px;
-                width: 25px;
-                border-radius: 50%;
-                background-color: var(--toggle-circle);
-                transform:translateX(0);
-                transition:transform 0.3s;
+            &--light:checked ~ .header__switch-dot{
+                left:2.2rem;
+            }
+
+            &--dark:checked ~ .header__switch-dot{
+                left:0.2rem;
             }
         }
     }
+
+    /*
+    * TOGGLE USING BUTTON
+    */
+    // &__mode{
+    //     font-weight: $fw-bold;
+    //     padding-top:1rem;
+    //     &, &-switch{
+    //         display: flex;
+    //         align-items: center;
+    //     }
+
+    //     &-switch{
+    //         margin-left: auto;
+    //         padding:0.5rem 0.25rem;
+    //         width: 65px;
+    //         height: 35px;
+    //         border-radius: 50px;
+    //         background:var(--toggle);
+
+    //         &[aria-checked='true']::before{
+    //             transform:translateX(calc(100% + 0.5rem));
+    //         }
+
+    //         &::before{
+    //             content:'';
+    //             display: block;
+    //             height:25px;
+    //             width: 25px;
+    //             border-radius: 50%;
+    //             background-color: var(--toggle-circle);
+    //             transform:translateX(0);
+    //             transition:transform 0.3s;
+    //         }
+    //     }
+    // }
 
     @include tablet-query{
         &-title{
@@ -76,13 +138,13 @@
             align-items: center;
         }
 
-        &__mode{
-            margin-left: auto;
-            color:var(--toggle-label);
-            opacity: 1;
-            &-label{
-                margin-right: 1rem;
-            }
-        }
+        // &__mode{
+        //     margin-left: auto;
+        //     color:var(--toggle-label);
+        //     opacity: 1;
+        //     &-label{
+        //         margin-right: 1rem;
+        //     }
+        // }
     }
 }

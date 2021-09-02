@@ -26,13 +26,33 @@
                     </span>
                 </p>
             </div>
-            <div class="header__mode">
+            <!--TOGGLE USING BUTTON-->
+
+            <!-- <div class="header__mode">
                 <label class="header__mode-label" for="header-toggle">
                     Dark Mode
                 </label>
                 <button id="header-toggle" class="header__mode-switch" role="switch" aria-checked="false">
                 </button>
-            </div>
+            </div> -->
+
+            <!--TOGGLE USING RADIO BUTTONS-->
+            <fieldset class="header__mode">
+                <legend class="sr-only">
+                    Theme selection
+                </legend>
+                <label for="header__switch-toggle--dark">
+                    Dark mode
+                </label>
+                <div class="header__switch">
+                    <input value="dark" type="radio" name="theme"
+                        class="header__switch-toggle header__switch-toggle--dark" id="header__switch-toggle--dark">
+                    <input value="light" type="radio" name="theme"
+                        class="header__switch-toggle header__switch-toggle--light" id="header__switch-toggle--light"
+                        aria-label="Light mode" checked>
+                    <span class="header__switch-dot"></span>
+                </div>
+            </fieldset>
         </div>
     </header>
     <main>
